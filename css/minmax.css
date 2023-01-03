@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -15,7 +15,8 @@
     min-width: 500px;
     max-width: 1000px;
 }
-.data{
+
+.data {
     width: 85%;
     height: 150px;
     border: 2px solid red;
@@ -24,5 +25,4 @@
     max-height: 800px;
     overflow: scroll;
     padding: 10px;
-
 }
