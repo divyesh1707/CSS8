@@ -1,1 +1,26 @@
-    
+. {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#inline {
+    display: none;
+}
+
+#inline span {
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+    padding: 25px;
+    background-color: red;
+}
+
+#inline-block span {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    background-color: yellow;
+}
