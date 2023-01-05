@@ -10,14 +10,21 @@
     border: 2px solid black;
     margin: 0 auto;
 }
-.logo{
+
+.logo {
     width: 10%;
     height: 60px;
     border: 2px solid black;
     float: left;
 }
-.menu{
-    display: inline-block;
-    padding: 25px;
+
+.menu {
+    padding: 20px 400px;
+    display: inline;
     float: right;
+}
+
+.menu span {
+    display: inline-block;
+    width: 80px;
 }
