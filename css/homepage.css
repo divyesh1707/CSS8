@@ -24,10 +24,11 @@
 
 nav {
     border: 2px solid red;
+    float: right;
 }
 
 nav ul {
-    float: right;
+    
     list-style-type: none;
 }
 
@@ -42,8 +43,8 @@ nav ul li a {
     display: inline-block;
 }
 
-@media screen and (max-width: 650px) {
-    .logo {
+@media screen and (max-width: 700px) {
+    .logo, nav {
         width: 100%;
         text-align: center;
     }
