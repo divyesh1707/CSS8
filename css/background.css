@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.image{
+    height: 1000px;
+    width: 1000px;
+    background: url("../Image/bmw.jpg") no-repeat scroll;
+    /* background-position: none; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: scroll; */
+}
