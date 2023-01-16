@@ -7,7 +7,7 @@
 .container {
     width: 100%;
     height: 400px;
-    background-color: aqua;
+    background-color: rgb(229, 220, 120);
     color: white;
     display: flex;
     /* row-gap: 10px; */
@@ -18,7 +18,7 @@
 .block1 {
     width: 200px;
     height: 100px;
-    background-color: blueviolet;
+    background-color: rgb(169, 103, 231);
     /* margin: 10px; */
 
 }
@@ -26,7 +26,7 @@
 .block2 {
     width: 200px;
     height: 150px;
-    background-color: brown;
+    background-color: rgb(225, 110, 110);
     /* margin: 10px; */
 }
 
