@@ -22,11 +22,12 @@
 
 }
 
-.vadilal ul li {
+.vadilal ul li:hover {
     list-style-type: none;
     margin-bottom: 20px;
     position: relative;
     font-size: 20px;
+    color: red;
 }
 
 .vadilal ul li::before {
