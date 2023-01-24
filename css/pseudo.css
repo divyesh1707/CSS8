@@ -1,0 +1,20 @@
+.logo p::first-letter {
+    font-size: 50px;
+
+}
+.data p::first-line{
+    color: red;
+}
+.demo ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.demo ul li::before{
+    content: "*";
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-right: 5px;
+
+}
