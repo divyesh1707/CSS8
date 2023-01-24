@@ -26,15 +26,16 @@
     list-style-type: none;
     margin-bottom: 20px;
     position: relative;
+    font-size: 20px;
 }
 
 .vadilal ul li::before {
     content: "";
     position: absolute;
     top: 0px;
-    left: -20px;
-    width: 15px;
-    height: 15px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
 }
 
 .vadilal ul li:first-child::before {
