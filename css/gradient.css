@@ -3,5 +3,5 @@
     height: 100vh;
 }
 .box1{
-    background-image: linear-gradient(red,green);
+    background-image: linear-gradient(rgba(255,0,0,0 ),rgba(255,0,0,1));
 }
