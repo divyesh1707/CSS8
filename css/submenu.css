@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,9 +25,11 @@ header nav ul li {
     text-decoration: none;
     position: relative;
 }
+
 header nav ul li a {
     padding: 20px;
 }
+
 header nav ul li a:hover {
     background-color: black;
     color: white;
@@ -37,7 +39,7 @@ header nav ul li ul a {
     width: 100%;
 }
 
-header nav ul li ul{
+header nav ul li ul {
     display: inline-block;
     position: absolute;
     top: 50px;
@@ -45,14 +47,51 @@ header nav ul li ul{
     display: none;
     background-color: grey;
 }
-header nav ul li ul li, header nav ul li ul li a{
+
+header nav ul li ul li,
+header nav ul li ul li a {
     width: 100%;
 }
-header nav ul li:hover > ul {
-    display: inline-block;  
+
+header nav ul li:hover>ul {
+    display: inline-block;
 }
-header nav ul li ul li ul{
+
+header nav ul li ul li ul {
     top: 0;
     left: 110px;
 }
 
+@media screen and (max-width:768px) {
+    nav>ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        background-color: brown;
+        height: 100vh;
+    }
+
+    header nav ul li {
+        display: block;
+
+    }
+
+    header nav ul li ul,
+    header nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        width: 100%;
+    }
+
+    header nav ul li ul li a{
+        padding-left: 40px;
+    }
+    header nav ul li ul li ul li > a{
+        padding-left: 60px;
+    }
