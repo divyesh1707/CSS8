@@ -61,15 +61,19 @@ header nav ul li ul li ul {
     top: 0;
     left: 110px;
 }
+nav>i,nav ul>i{
+    display: none !important;
+}
 
 @media screen and (max-width:768px) {
     nav>ul {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -190%;
         width: 50%;
         background-color: brown;
         height: 100vh;
+
     }
 
     header nav ul li {
@@ -89,9 +93,35 @@ header nav ul li ul li ul {
         width: 100%;
     }
 
-    header nav ul li ul li a{
+    header nav ul li ul li a {
         padding-left: 40px;
     }
-    header nav ul li ul li ul li > a{
+
+    header nav ul li ul li ul li>a {
         padding-left: 60px;
     }
+
+    nav ul>i {
+        float: right;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        z-index: 999;
+        position: relative;
+    }
+    nav ul{
+        transition: all 1s;
+
+    }
+
+    nav>i {
+        padding: 20px;
+        font-size: 20px;
+        transition: all 1s;
+    }
+
+    .showHide {
+        right: 0;
+    }
+
+}
