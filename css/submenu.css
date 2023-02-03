@@ -18,12 +18,14 @@ header a {
 
 header nav ul {
     list-style-type: none;
+
 }
 
 header nav ul li {
     display: inline-block;
     text-decoration: none;
     position: relative;
+
 }
 
 header nav ul li a {
@@ -61,8 +63,14 @@ header nav ul li ul li ul {
     top: 0;
     left: 110px;
 }
-nav>i,nav ul>i{
+
+nav>i,
+nav ul>i {
     display: none !important;
+}
+
+nav ul li:hover>a i {
+    transform: rotate(90deg);
 }
 
 @media screen and (max-width:768px) {
@@ -109,7 +117,8 @@ nav>i,nav ul>i{
         z-index: 999;
         position: relative;
     }
-    nav ul{
+
+    nav ul {
         transition: all 1s;
 
     }
@@ -123,5 +132,6 @@ nav>i,nav ul>i{
     .showHide {
         right: 0;
     }
+
 
 }
