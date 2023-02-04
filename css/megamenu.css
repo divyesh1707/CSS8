@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: relative;
 }
 
 header a {
@@ -21,15 +22,26 @@ header nav ul {
 
 }
 
+.megamenu {
+    width: 500px;
+    max-height: 300px;
+    background-color: grey;
+    position: absolute;
+    display: flex;
+    top: 42px;
+    left: -430px;
+    padding: 23%;
+    justify-content: space-between;
+}
+
 header nav ul li {
     display: inline-block;
     text-decoration: none;
     position: relative;
-
 }
 
 header nav ul li a {
-    padding: 20px;
+    padding: 10px;
 }
 
 header nav ul li a:hover {
@@ -37,25 +49,36 @@ header nav ul li a:hover {
     color: white;
 }
 
-header nav ul li ul a {
-    width: 100%;
-}
-
 header nav ul li ul {
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    display: none;
     background-color: grey;
 }
 
-header nav ul li ul li,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header nav ul li ul li,
 header nav ul li ul li a {
     width: 100%;
-}
+} */
 
-header nav ul li:hover>ul {
+/* header nav ul li:hover>ul {
     display: inline-block;
 }
 
@@ -71,4 +94,4 @@ nav ul>i {
 
 nav ul li:hover>a i {
     transform: rotate(90deg);
-}
+} */

@@ -8,24 +8,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 20px;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
 header a {
     text-decoration: none;
     display: inline-block;
+    color: black;
 }
 
 header nav ul {
     list-style-type: none;
-
 }
 
 header nav ul li {
     display: inline-block;
     text-decoration: none;
     position: relative;
-
 }
 
 header nav ul li a {
@@ -35,24 +36,26 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: black;
     color: white;
+    width: 100%;
 }
 
 header nav ul li ul a {
-    width: 100%;
+    width: 95px;
+
 }
 
 header nav ul li ul {
     display: inline-block;
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: 0;
     display: none;
     background-color: grey;
 }
 
-header nav ul li ul li,
-header nav ul li ul li a {
+header nav ul li ul li {
     width: 100%;
+    transition: all 0.3s;
 }
 
 header nav ul li:hover>ul {
@@ -61,82 +64,40 @@ header nav ul li:hover>ul {
 
 header nav ul li ul li ul {
     top: 0;
-    left: 110px;
+    left: 100px;
 }
 
-nav>i,
-nav ul>i {
-    display: none !important;
-}
-
-nav ul li:hover>a i {
+header nav ul li a:hover i {
     transform: rotate(90deg);
+}
+header nav ul i{    
+    font-size: 16px;
+    
 }
 
 @media screen and (max-width:768px) {
     nav>ul {
         position: absolute;
         top: 0;
-        right: -190%;
-        width: 50%;
-        background-color: brown;
+        right: -200px;
+        width: 65%;
+        background-color: grey;
         height: 100vh;
-
     }
 
     header nav ul li {
         display: block;
-
-    }
-    header nav ul li ul li {
-        top: 0;
-        left: 0;
-        position: absolute;
     }
 
     header nav ul li ul,
     header nav ul li ul li ul {
         position: relative;
+        width: 100%;
         top: 0;
         left: 0;
-        width: 100%;
     }
-
-    header nav ul li a {
-        width: 100%;
+    header nav ul>i{
+        margin-top: 10px;
+        margin-left: 200px;
     }
-
-    header nav ul li ul li a {
-        padding-left: 40px;
-    }
-
-    header nav ul li ul li ul li>a {
-        padding-left: 60px;
-    }
-
-    nav ul>i {
-        float: right;
-        padding: 20px;
-        font-size: 20px;
-        color: white;
-        z-index: 999;
-        position: relative;
-    }
-
-    nav ul {
-        transition: all 1s;
-
-    }
-
-    nav>i {
-        padding: 20px;
-        font-size: 20px;
-        transition: all 1s;
-    }
-
-    .showHide {
-        right: 0;
-    }
-
-
 }
