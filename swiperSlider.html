@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiperSlider.css">
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper main-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./Image/n1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Image/n2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Image/background.jpg" alt="">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><Img src="./Image/n1.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n2.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n3.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n4.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n5.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n6.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n7.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n8.jpg" alt=""></Img></div>
+            <div class="swiper-slide"><Img src="./Image/n9.jpg" alt=""></Img></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="next"><i class="fa-solid fa-chevron-right"></i></div> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                210: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <script>
+        const swiper = new Swiper('.main-slider', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
