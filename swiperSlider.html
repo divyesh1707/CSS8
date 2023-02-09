@@ -53,19 +53,26 @@
             <div class="swiper-slide"><Img src="./Image/n9.jpg" alt=""></Img></div>
         </div>
         <div class="swiper-pagination"></div>
-        <!-- <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
-        <div class="next"><i class="fa-solid fa-chevron-right"></i></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
             },
             breakpoints: {
                 640: {
@@ -94,10 +101,10 @@
                 el: '.swiper-pagination',
             },
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+           // Navigation arrows
+           navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
             },
 
             // And if we need scrollbar
